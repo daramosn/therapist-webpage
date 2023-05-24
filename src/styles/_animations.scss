@@ -1,0 +1,17 @@
+@keyframes flip-in {
+	from {
+		transform: rotateY(0);
+	}
+	to {
+		transform: rotateY(180deg);
+	}
+}
+
+@keyframes flip-out {
+	from {
+		transform: rotateY(180deg);
+	}
+	to {
+		transform: rotateY(0);
+	}
+}

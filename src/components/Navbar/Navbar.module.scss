@@ -1,0 +1,29 @@
+@use '../../styles/colors' as *;
+@use '../../styles/fonts' as *;
+@use '../../styles/animations' as *;
+
+.navbar {
+	margin: 0;
+	padding: 0.6rem;
+	font-family: $font-nunito;
+	font-weight: 500;
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	box-shadow: 0 1px 10px 3px $antiflash-white;
+
+	&__logo {
+		width: 30px;
+		animation: flip-out 300ms ease-out forwards;
+		&:hover {
+			animation: flip-in 300ms ease-in forwards;
+		}
+	}
+
+	&__link {
+		text-decoration: none;
+		color: $color-primary;
+	}
+}

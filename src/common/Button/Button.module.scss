@@ -1,0 +1,15 @@
+@use '../../styles/variables/colors' as *;
+
+.button {
+	background-color: $color-accent-light;
+	border: 1px solid $color-accent-light;
+	border-radius: 12px;
+	padding: 0.5rem;
+	color: $color-text;
+	transition: 0.2s all;
+
+	&:hover {
+		background-color: $color-accent;
+		border: 1px solid $color-accent;
+	}
+}

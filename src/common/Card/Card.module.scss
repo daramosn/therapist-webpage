@@ -1,0 +1,8 @@
+@use '../../styles/variables/colors' as *;
+
+.card {
+	background-color: $color-secondary;
+	padding: 2rem;
+	border-radius: 12px;
+	box-shadow: 0 1px 8px $color-primary;
+}
