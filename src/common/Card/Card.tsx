@@ -4,7 +4,7 @@ import classes from './Card.module.scss';
 
 type CardProps = {
 	children: ReactNode;
-	className: string;
+	className?: string;
 };
 
 const Card: FC<CardProps> = ({ children, className }) => {

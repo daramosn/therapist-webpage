@@ -1,0 +1,45 @@
+@use '../../../../styles/colors' as *;
+
+.service {
+	border-radius: 5px;
+	width: clamp(250px, 25vw, 500px);
+	padding: 3rem 1rem;
+	display: grid;
+	gap: 0.5rem;
+	justify-items: center;
+	text-align: center;
+	overflow: hidden;
+
+	&__icon {
+		height: 50px;
+		width: 50px;
+		margin-bottom: 1rem;
+		& > * {
+			fill: currentColor;
+		}
+	}
+
+	&__title {
+		margin: 0;
+	}
+
+	&__description {
+		margin: 0;
+		font-size: small;
+	}
+
+	&__shipping {
+		margin: 0;
+		align-items: center;
+		margin-top: 2rem;
+		font-size: 15px;
+		display: flex;
+		flex-direction: row;
+		gap: 5px;
+
+		&-cart {
+			width: 15px;
+			fill: currentColor;
+		}
+	}
+}
