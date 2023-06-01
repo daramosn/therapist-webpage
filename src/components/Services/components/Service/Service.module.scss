@@ -11,8 +11,8 @@
 	overflow: hidden;
 
 	&__icon {
-		height: 50px;
-		width: 50px;
+		height: 70px;
+		width: 70px;
 		margin-bottom: 1rem;
 		& > * {
 			fill: currentColor;
@@ -26,6 +26,7 @@
 	&__description {
 		margin: 0;
 		font-size: small;
+		text-align: justify;
 	}
 
 	&__shipping {

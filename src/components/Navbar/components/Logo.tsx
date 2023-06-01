@@ -1,9 +1,9 @@
 import React from 'react';
 
-import logo from '../../../assets/logo.svg';
+import { ReactComponent as LogoIcon } from '../../../assets/logo.svg';
 
 const Logo = () => {
-	return <img src={logo} alt="" />;
+	return <LogoIcon />;
 };
 
 export default Logo;

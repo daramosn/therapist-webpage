@@ -20,12 +20,12 @@ const Service: FC<ServiceProps> = ({
 	return (
 		<article className={`${classes['service']} ${className}`}>
 			<IconComponent className={classes['service__icon']} />
-			<h4 className={classes['service__title']}>{title}</h4>
+			<h3 className={classes['service__title']}>{title}</h3>
 			<p className={classes['service__description']}>{description}</p>
 
 			<p className={classes['service__shipping']}>
 				<CartIcon className={classes['service__shipping-cart']} />
-				<p> Appointment</p>
+				<p>Appointment</p>
 			</p>
 		</article>
 	);
