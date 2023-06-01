@@ -14,7 +14,7 @@
 		height: 70px;
 		width: 70px;
 		margin-bottom: 1rem;
-		& > * {
+		& :first-child {
 			fill: currentColor;
 		}
 	}

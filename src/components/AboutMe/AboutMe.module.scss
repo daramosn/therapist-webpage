@@ -1,7 +1,7 @@
 @use '../../styles/colors' as *;
 
 .about-me {
-	padding: 2rem 5rem;
+	padding: 4rem 7rem;
 	background-color: $color-tertiary-light;
 	@media (width<768px) {
 		padding: 2rem 3rem;
@@ -13,8 +13,9 @@
 	&__information {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		gap: 3rem;
+		gap: 4rem;
 		@media (width<768px) {
+			gap: 2rem;
 			grid-template-columns: 1fr;
 		}
 	}
@@ -25,6 +26,7 @@
 		&-description {
 			font-size: 18px;
 			color: $color-accent;
+			text-align: justify;
 		}
 	}
 	&__service {
@@ -32,6 +34,7 @@
 		margin: 0;
 		&-description {
 			font-size: 18px;
+			text-align: justify;
 		}
 	}
 }

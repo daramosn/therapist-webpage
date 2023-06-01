@@ -23,10 +23,10 @@ const Service: FC<ServiceProps> = ({
 			<h3 className={classes['service__title']}>{title}</h3>
 			<p className={classes['service__description']}>{description}</p>
 
-			<p className={classes['service__shipping']}>
+			<div className={classes['service__shipping']}>
 				<CartIcon className={classes['service__shipping-cart']} />
 				<p>Appointment</p>
-			</p>
+			</div>
 		</article>
 	);
 };
