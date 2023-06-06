@@ -1,6 +1,6 @@
 import React from 'react';
 
-import bgImageKid from '../../assets/kid_1.jpg';
+import bgImageKid from '../../assets/images/kid_1.jpg';
 
 import classes from './Hero.module.scss';
 
@@ -17,10 +17,10 @@ const Hero = () => {
 					<h1 className={classes['hero--no-margin']}>
 						Psychology specialist
 					</h1>
-					<h3 className={classes['hero--no-margin']}>Pepito Perez</h3>
+					<h3 className={classes['hero--no-margin']}>John Doe</h3>
 					<p className={classes['hero--no-margin']}>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						Laboriosam et id rerum atque voluptates distinctio
+						Welcome to my website, a space dedicated to your
+						well-being and personal growth.
 					</p>
 				</div>
 			</div>

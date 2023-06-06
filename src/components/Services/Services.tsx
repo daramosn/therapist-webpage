@@ -1,8 +1,6 @@
-import React from 'react';
-
-import { ReactComponent as emotionalIcon } from '../../assets/emotional.svg';
-import { ReactComponent as handsIcon } from '../../assets/heart-hands.svg';
-import { ReactComponent as heartIcon } from '../../assets/heart.svg';
+import { ReactComponent as emotionalIcon } from '../../assets/icons/emotional.svg';
+import { ReactComponent as handsIcon } from '../../assets/icons/heart-hands.svg';
+import { ReactComponent as heartIcon } from '../../assets/icons/heart.svg';
 
 import Service from './components/Service/Service';
 
@@ -12,24 +10,24 @@ const Services = () => {
 	return (
 		<section className={classes['services']}>
 			<Service
-				title={'Anxiety disorder'}
+				title={'Individual therapy'}
 				description={
-					'Sample text. Click to select the text box. Click again or double click to start editing the text.'
+					'A personalized approach to address your concerns and promote your mental well-being'
 				}
 				icon={handsIcon}
 			/>
 			<Service
 				className={classes['services--background']}
-				title={'Anxiety disorder'}
+				title={'Couples therapy'}
 				description={
-					'Sample text. Click to select the text box. Click again or double click to start editing the text.'
+					'Strengthen communication and connection in your relationship'
 				}
 				icon={emotionalIcon}
 			/>
 			<Service
-				title={'Anxiety disorder'}
+				title={'Family Therapy'}
 				description={
-					'Sample text. Click to select the text box. Click again or double click to start editing the text.'
+					"Let's work together to improve family dynamics and relationships"
 				}
 				icon={heartIcon}
 			/>

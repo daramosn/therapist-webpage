@@ -1,6 +1,6 @@
 import React, { FC, SVGProps } from 'react';
 
-import { ReactComponent as CartIcon } from '../../../../assets/cart.svg';
+import { ReactComponent as CartIcon } from '../../../../assets/icons/cart.svg';
 
 import classes from './Service.module.scss';
 

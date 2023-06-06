@@ -1,0 +1,21 @@
+@use '../../../../styles/colors' as *;
+
+.comment {
+	display: grid;
+	border: 1px solid $antiflash-white;
+	background-color: $antiflash-white;
+	padding: 1.5rem 2rem;
+	border-radius: 5px;
+	&__avatar {
+		width: 60px;
+		aspect-ratio: 1/1;
+		border-radius: 50px;
+	}
+	&__text {
+		text-align: justify;
+	}
+	&__name {
+		margin-left: auto;
+		font-size: 1.3rem;
+	}
+}

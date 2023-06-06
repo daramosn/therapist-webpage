@@ -1,0 +1,66 @@
+@use '../../styles/colors' as *;
+@use '../../styles/mixins' as *;
+
+.features {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding: 4rem 4rem;
+	gap: 1rem;
+
+	@include media(md) {
+		padding: 2rem 3rem;
+		grid-template-columns: 1fr;
+	}
+
+	&__review {
+		&-image {
+			width: 70%;
+			aspect-ratio: 1/1;
+			object-fit: cover;
+		}
+
+		&-comment {
+			position: relative;
+			transform: translate(15%, -20%);
+			width: 85%;
+			transition: all 0.3s ease;
+
+			&:hover {
+				box-shadow: 2px 2px 1px 2px $color-tertiary;
+				transform: translate(14%, -21%);
+			}
+		}
+	}
+
+	&__properties {
+		align-self: center;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		justify-items: center;
+
+		@include media(sm) {
+			grid-template-columns: 1fr;
+		}
+
+		&-item {
+			padding: 2rem;
+			display: grid;
+			justify-items: center;
+			gap: 1rem;
+
+			&-icon {
+				width: 100px;
+				fill: $color-accent-light;
+			}
+			&-title {
+				margin: 0;
+				text-align: center;
+				font-weight: 700;
+			}
+		}
+	}
+
+	&--bg {
+		background-color: $color-tertiary-light;
+	}
+}

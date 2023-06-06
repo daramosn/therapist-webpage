@@ -1,5 +1,3 @@
-import React from 'react';
-
 import classes from './AboutMe.module.scss';
 
 const AboutMe = () => {
