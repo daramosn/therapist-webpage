@@ -3,6 +3,7 @@
 @use '../../styles/animations' as *;
 
 .navbar {
+	background-color: $white;
 	margin: 0;
 	padding: 0.6rem;
 	font-family: $font-nunito;
@@ -12,7 +13,10 @@
 	justify-content: space-around;
 	align-items: center;
 	flex-wrap: wrap;
-	box-shadow: 0 1px 10px 3px $antiflash-white;
+	box-shadow: 0 1px 10px 1px $antiflash-white;
+	position: sticky;
+	top: 0;
+	z-index: 100;
 
 	&__logo {
 		width: 23px;
