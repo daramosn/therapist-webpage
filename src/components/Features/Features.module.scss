@@ -4,7 +4,7 @@
 .features {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	padding: 4rem 4rem;
+	padding: 4rem 7rem;
 	gap: 1rem;
 
 	@include media(md) {
@@ -15,19 +15,20 @@
 	&__review {
 		&-image {
 			width: 70%;
+			max-width: 450px;
 			aspect-ratio: 1/1;
 			object-fit: cover;
 		}
 
 		&-comment {
 			position: relative;
-			transform: translate(15%, -20%);
+			transform: translate(15%, -48%);
 			width: 85%;
 			transition: all 0.3s ease;
 
 			&:hover {
 				box-shadow: 2px 2px 1px 2px $color-tertiary;
-				transform: translate(14%, -21%);
+				transform: translate(14%, -49%);
 			}
 		}
 	}

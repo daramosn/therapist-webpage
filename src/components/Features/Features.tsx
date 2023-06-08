@@ -21,7 +21,7 @@ const Features = () => {
 					textComment={
 						'Sample text. Click to select the text box. Click again or double click to start editing the text.'
 					}
-					name={'John Doe'}
+					name={'Sarah Wilson'}
 				/>
 			</div>
 
