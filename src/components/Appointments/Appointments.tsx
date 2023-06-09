@@ -16,7 +16,7 @@ const Appointments = () => {
 			</p>
 			<div className={classes['appointments__phone']}>
 				<IconPhone className={classes['appointments__icon']} />
-				<span> (555) 555-5555 </span>
+				<span> (555) 555-5555</span>
 			</div>
 		</section>
 	);
