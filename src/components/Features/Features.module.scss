@@ -14,7 +14,7 @@
 
 	&__review {
 		&-image {
-			width: 70%;
+			width: 80%;
 			max-width: 450px;
 			aspect-ratio: 1/1;
 			object-fit: cover;
@@ -22,19 +22,23 @@
 
 		&-comment {
 			position: relative;
-			transform: translate(15%, -48%);
+			margin: 0;
+			transform: translate(15%, -48px);
 			width: 85%;
 			transition: all 0.3s ease;
 
-			&:hover {
-				box-shadow: 2px 2px 1px 2px $color-tertiary;
-				transform: translate(14%, -49%);
-			}
+			// &:hover {
+			// 	box-shadow: 2px 2px 1px 2px $color-tertiary;
+			// 	transform: translate(14%, -49%);
+			// }
+			// @include media(sm) {
+			// 	transform: translate(15%, -40px);
+			// }
 		}
 	}
 
 	&__properties {
-		align-self: center;
+		align-self: stretch;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		justify-items: center;

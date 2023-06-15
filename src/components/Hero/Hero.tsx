@@ -1,6 +1,6 @@
 import React from 'react';
 
-import bgImageKid from '../../assets/images/kid_1.jpg';
+import bgImageKid from '../../assets/images/kid_1.webp';
 
 import classes from './Hero.module.scss';
 

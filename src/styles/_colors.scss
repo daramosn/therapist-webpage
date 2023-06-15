@@ -1,29 +1,17 @@
-// Colors
-$eerie-black: #171715ff;
-$white: #fdfdfdff;
-$white-2: #ffffffff;
-$antiflash-white: #f0f0f0;
-$orange-crayola: #ea743cff;
-$orange-crayola-light: rgb(246, 132, 80);
-$gray: #75787aff;
-$gray-light: #f6f3f3;
-$taupe: #54453cff;
-
-// Palette
-$color-primary: $eerie-black;
-$color-secondary: $white;
-$color-accent: $orange-crayola;
-$color-accent-light: $orange-crayola-light;
-$color-background: $taupe;
-$color-text: $antiflash-white;
-
-// Colores adicionales (opcional)
-$color-tertiary: $gray;
-$color-tertiary-light: $gray-light;
-
-$color-quaternary: $white-2;
-$color-quinary: $eerie-black;
-
-// Ejemplo de gradiente
-$color-gradient-start: $white;
-$color-gradient-end: $orange-crayola;
+/* Color styles */
+$color-primary: #f4773d;
+$color-primary-75: #f7996e;
+$color-secondary: #ffb74a;
+$color-gradient: linear-gradient(
+	0.4turn,
+	$color-secondary,
+	20%,
+	$color-primary
+);
+$color-black: #282422;
+$color-black-75: #5e5b5a;
+$color-black-50: #949291;
+$color-black-25: #c9c8c8;
+$color-black-10: #eaeae9;
+$color-black-05: #f4f4f4;
+$color-error: #fa3732;

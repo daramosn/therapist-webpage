@@ -16,7 +16,8 @@
 
 	&__image {
 		flex-grow: 1;
-		width: 300px;
+		width: clamp(250px, 90vw, 300px);
+		width: 250px;
 	}
 
 	&__title {
@@ -28,10 +29,11 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		padding: 2rem;
+		padding: calc(8px + 1.5625vw);
+		text-align: center;
 	}
-
 	&__phone {
+		min-width: 256px;
 		flex-grow: 1;
 		padding: 2rem;
 		background-color: $white;
