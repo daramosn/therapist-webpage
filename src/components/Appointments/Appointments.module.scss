@@ -1,16 +1,13 @@
-@use '../../styles/colors' as *;
-@use '../../styles/mixins' as *;
-
+@use '../../styles/styles.scss' as *;
 .appointments {
-	padding: 4rem 7rem;
-	background-color: $antiflash-white;
+	padding: 64px max(32px, ((100vw - $body-width) / 2));
+	background-color: $color-black-05;
 	display: flex;
 	justify-content: center;
 	align-content: center;
 	flex-wrap: wrap;
 
 	@include media(md) {
-		padding: 4rem 3rem;
 		grid-template-columns: 1fr;
 	}
 
@@ -22,9 +19,9 @@
 
 	&__title {
 		flex-grow: 1;
-		background-color: $white;
+		background-color: white;
 		margin: 0;
-		font-size: 35px;
+		font-size: $h4;
 		font-weight: 700;
 		display: flex;
 		justify-content: center;
@@ -35,12 +32,12 @@
 	&__phone {
 		min-width: 256px;
 		flex-grow: 1;
-		padding: 2rem;
-		background-color: $white;
+		padding: 32px;
+		background-color: white;
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		gap: 1rem;
+		gap: 16px;
 	}
 
 	&__icon {

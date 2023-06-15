@@ -1,19 +1,19 @@
-@use '../../../../styles/colors' as *;
+@use '../../../../styles/styles.scss' as *;
 
 .service {
 	border-radius: 5px;
-	width: clamp(250px, 25vw, 500px);
-	padding: 3rem 1rem;
+	width: clamp(200px, 25vw, 304px);
+	padding: 16px 16px;
 	display: grid;
-	gap: 0.5rem;
+	gap: 8px;
 	justify-items: center;
 	text-align: center;
 	overflow: hidden;
 
 	&__icon {
-		height: 70px;
-		width: 70px;
-		margin-bottom: 1rem;
+		height: 64px;
+		width: 64px;
+		margin-bottom: 16px;
 		& :first-child {
 			fill: currentColor;
 		}
@@ -21,26 +21,32 @@
 
 	&__title {
 		margin: 0;
+		font-size: $h5;
 	}
 
 	&__description {
 		margin: 0;
-		font-size: medium;
+		font-size: $paragraph;
 		text-align: center;
 	}
 
 	&__shipping {
 		margin: 0;
 		align-items: center;
-		margin-top: 2rem;
-		font-size: 15px;
+		margin-top: 16px;
+		font-size: $paragraph;
 		display: flex;
 		flex-direction: row;
-		gap: 5px;
+		gap: 8px;
+		transition: all 0.1s ease-out;
 
 		&-cart {
-			width: 15px;
+			width: 16px;
 			fill: currentColor;
+		}
+
+		&:hover {
+			transform: scale(1.03);
 		}
 	}
 }

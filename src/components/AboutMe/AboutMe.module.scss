@@ -1,11 +1,10 @@
-@use '../../styles/colors' as *;
+@use '../../styles/styles.scss' as *;
 
 .about-me {
-	padding: 4rem 7rem;
-	background-color: $color-tertiary-light;
-	@media (width<768px) {
-		padding: 2rem 3rem;
-	}
+	padding: 64px max(32px, ((100vw - $body-width)/2));
+	background: $color-black-05;
+	color: black;
+	font-family: $font-nunito;
 
 	&__title {
 		font-style: normal;
@@ -13,27 +12,35 @@
 	&__information {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		gap: 4rem;
-		@media (width<768px) {
-			gap: 2rem;
+		gap: 64px;
+
+		@include media(sm) {
+			gap: 24px;
 			grid-template-columns: 1fr;
+		}
+
+		& > * {
+			display: grid;
+			justify-content: stretch;
+			gap: 16px;
 		}
 	}
 
 	&__degree {
 		margin: 0;
-		font-size: 40px;
+		font-size: $h4 + 8px;
 		&-description {
-			font-size: 18px;
-			color: $color-accent;
+			font-size: $paragraph;
+			color: $color-primary;
 			text-align: justify;
 		}
 	}
 	&__service {
-		font-size: 30px;
+		font-size: $h5;
 		margin: 0;
 		&-description {
-			font-size: 18px;
+			margin: 0 auto;
+			font-size: $paragraph;
 			text-align: justify;
 		}
 	}
