@@ -1,0 +1,47 @@
+@use '../../styles/styles.scss' as *;
+
+.mission {
+	padding: 80px max(32px, (100vw - $body-width)/2);
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 64px;
+
+	&__info {
+		display: grid;
+	}
+
+	&__title {
+		margin: 0;
+		font-size: $h6;
+		font-weight: 500;
+	}
+	&__name {
+		margin: 0;
+		font-size: $h4;
+		// font-weight: 500;
+	}
+	&__description {
+		margin: 0;
+		font-size: $paragraph;
+	}
+
+	&__info-card {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		gap: 16px;
+		&-icon {
+			width: 64px;
+			height: 64px;
+		}
+		&-text {
+			flex-grow: 1;
+		}
+	}
+
+	&__figure {
+		width: 100%;
+		aspect-ratio: 3/2;
+		object-fit: cover;
+	}
+}
