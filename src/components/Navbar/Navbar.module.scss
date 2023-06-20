@@ -27,13 +27,25 @@
 		}
 	}
 
+	&__links {
+		display: flex;
+		gap: 16px;
+	}
+
 	&__link {
+		border: 1px solid transparent;
+		border-radius: 15px;
+		padding: 4px 8px;
+		font-size: $h6;
+		font-weight: 400;
 		text-decoration: none;
-		color: $color-black;
-		transition: all 100ms ease-in;
+		color: $color-black-75;
+		transition: all 200ms ease-in;
 
 		&:hover {
-			font-weight: 700;
+			color: $color-black;
+			border: 1px solid $color-black-10;
+			background-color: $color-black-05;
 		}
 	}
 }

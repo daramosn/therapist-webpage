@@ -12,21 +12,23 @@ const Navbar = () => {
 				</Link>
 			</li>
 
-			<li>
-				<Link className={classes['navbar__link']} to={'/about'}>
-					About
-				</Link>
-			</li>
-			<li>
-				<Link className={classes['navbar__link']} to={'contact'}>
-					Contact us
-				</Link>
-			</li>
-			<li>
-				<Link className={classes['navbar__link']} to={'pricing'}>
-					Pricing
-				</Link>
-			</li>
+			<div className={classes['navbar__links']}>
+				<li>
+					<Link className={classes['navbar__link']} to={'/about'}>
+						About
+					</Link>
+				</li>
+				<li>
+					<Link className={classes['navbar__link']} to={'contact'}>
+						Contact us
+					</Link>
+				</li>
+				<li>
+					<Link className={classes['navbar__link']} to={'pricing'}>
+						Pricing
+					</Link>
+				</li>
+			</div>
 		</ul>
 	);
 };

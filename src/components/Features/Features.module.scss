@@ -4,7 +4,7 @@
 	font-family: $font-nunito;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	padding: 64px max(32px, ((100vw - $body-width) / 2));
+	padding: 64px max(32px, ((100vw - $body-width) / 2)) 32px;
 	gap: 16px;
 
 	@include media(md) {

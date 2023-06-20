@@ -26,7 +26,7 @@
 		align-content: end;
 
 		&-text {
-			font-size: clamp($h6, 4vw, $h3);
+			font-size: clamp($h5, 4vw, $h3);
 			color: whitesmoke;
 			margin: 0 30% 4rem max(32px, ((100vw - $body-width) / 2));
 		}

@@ -21,17 +21,24 @@ const MissionSection = () => {
 					/>
 					<div className={classes['mission__info-card-text']}>
 						<h3>Mission</h3>
-						<p>sample text sample text sample text sample text</p>
+						<p>
+							sample text sample text sample text sample text
+							sample text sample text sample text sample text
+						</p>
 					</div>
 				</div>
 				<div className={classes['mission__info-card']}>
 					<PlantIcon className={classes['mission__info-card-icon']} />
 					<div className={classes['mission__info-card-text']}>
 						<h3>Vision</h3>
-						<p>sample text sample text sample text sample text</p>
+						<p>
+							sample text sample text sample text sample text
+							sample text sample text sample text sample text
+						</p>
 					</div>
 				</div>
 			</div>
+
 			<img
 				className={classes['mission__figure']}
 				src={takingNotePsy}

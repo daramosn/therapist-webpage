@@ -1,5 +1,6 @@
 @use '../../styles/styles.scss' as *;
 .appointments {
+	font-family: $font-nunito;
 	padding: 64px max(32px, ((100vw - $body-width) / 2));
 	background-color: $color-black-05;
 	display: flex;
@@ -13,7 +14,7 @@
 
 	&__image {
 		flex-grow: 1;
-		width: clamp(250px, 90vw, 300px);
+		// width: clamp(250px, 90vw, 300px);
 		width: 250px;
 	}
 
