@@ -1,37 +1,48 @@
 @use '../../styles/styles.scss' as *;
 
 .hero {
-	display: grid;
-	grid-template-columns: 1fr;
-
-	&__bg-image {
-		grid-row: 1/2;
-		grid-column: 1/2;
-		width: 100%;
-		min-height: 380px;
-		max-height: 700px;
-		object-fit: cover;
-	}
-
-	&__description {
-		grid-row: 1/2;
-		grid-column: 1/2;
-		background: linear-gradient(
+	background-image: linear-gradient(
 			to bottom,
 			rgba(0, 0, 0, 0.1),
 			rgba(0, 0, 0, 0.5)
-		);
-		display: grid;
-		align-content: end;
+		),
+		url('../../assets/images/kid_1.webp');
+	background-size: cover;
+	background-position: center center;
+	height: clamp(400px, 65vw, 750px);
+	padding: 0 max(32px, ((100vw - $body-width) / 2)) 64px;
+	font-size: clamp($h5, 3vw, $h3);
+	color: $color-black-05;
+	display: grid;
+	place-content: end;
+	word-wrap: break-word;
+	text-wrap: balance;
+	-webkit-text-wrap: balance;
 
-		&-text {
-			font-size: clamp($h5, 4vw, $h3);
-			color: whitesmoke;
-			margin: 0 30% 4rem max(32px, ((100vw - $body-width) / 2));
+	&__form {
+		margin-top: 32px;
+		display: flex;
+	}
+
+	&__button {
+		font-size: $h5;
+		background-color: $color-primary;
+		border-radius: 0 10px 10px 0;
+
+		&:hover {
+			background-color: $color-error;
+			color: white;
 		}
 	}
 
-	&--no-margin {
+	&__input {
+		padding: 8px 16px;
+		width: max(190px, 30%);
+		border: none;
+		border-radius: 10px 0 0 10px;
+	}
+
+	&--margin-0 {
 		margin: 0;
 	}
 }

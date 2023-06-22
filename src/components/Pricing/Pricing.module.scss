@@ -10,23 +10,20 @@
 	}
 
 	&__description {
-		font-size: $h6;
+		font-size: 21px;
 		font-weight: 400;
 		text-align: center;
+		margin-bottom: 64px;
 	}
 
 	&__products {
 		list-style: none;
 		padding: 0;
-
-		// display: grid;
-		// grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-		// place-items: center;
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-around;
 		align-items: stretch;
-		gap: 24px;
+		gap: 48px 32px;
 
 		& > * {
 			flex-basis: 250px;

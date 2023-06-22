@@ -1,7 +1,8 @@
 import React, { FC } from 'react';
 
-import classes from './Product.module.scss';
 import Button from '../../../common/Button/Button';
+
+import classes from './Product.module.scss';
 
 type ProductProps = {
 	title: string;
@@ -17,7 +18,7 @@ const Product: FC<ProductProps> = ({ title, price, features }) => {
 			<ul className={classes['product__features']}>
 				{features.map((feature) => (
 					<li
-						className={classes['product__feature-item']}
+						className={classes['product__features-item']}
 						key={feature}
 					>
 						{feature}

@@ -2,16 +2,17 @@
 $color-primary: #f4773d;
 $color-primary-75: #f7996e;
 $color-secondary: #ffb74a;
+$color-error: #fa3732;
 $color-gradient: linear-gradient(
 	0.4turn,
 	$color-secondary,
 	20%,
 	$color-primary
 );
+$color-gradient-2: linear-gradient(0.4turn, $color-error 60%, $color-secondary);
 $color-black: #282422;
 $color-black-75: #5e5b5a;
 $color-black-50: #949291;
 $color-black-25: #c9c8c8;
 $color-black-10: #eaeae9;
 $color-black-05: #f4f4f4;
-$color-error: #fa3732;

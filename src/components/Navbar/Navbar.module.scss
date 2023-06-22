@@ -20,7 +20,7 @@
 	z-index: 100;
 
 	&__logo {
-		width: 16px;
+		width: 21px;
 		animation: $flip-out;
 		&:hover {
 			animation: $flip-in;
@@ -46,6 +46,7 @@
 			color: $color-black;
 			border: 1px solid $color-black-10;
 			background-color: $color-black-05;
+			font-weight: 500;
 		}
 	}
 }

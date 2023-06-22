@@ -2,7 +2,7 @@
 
 .button {
 	background-color: $color-primary-75;
-	border: 1px solid $color-primary-75;
+	border: none;
 	border-radius: 12px;
 	padding: 8px 16px;
 	color: $color-black-05;
@@ -10,6 +10,5 @@
 
 	&:hover {
 		background-color: $color-primary;
-		border: 1px solid $color-primary;
 	}
 }

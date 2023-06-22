@@ -1,12 +1,13 @@
 import React from 'react';
 
-import classes from './Pricing.module.scss';
 import Product from './Product/Product';
+
+import classes from './Pricing.module.scss';
 
 const DUMMY_PRODUCTS = [
 	{
 		id: '1',
-		title: 'Initial consultation',
+		title: '🍂 Initial consultation',
 		price: 5,
 		features: [
 			'30 minutes',
@@ -17,7 +18,7 @@ const DUMMY_PRODUCTS = [
 	},
 	{
 		id: '2',
-		title: 'Individual therapy session',
+		title: '👩‍💼 Individual therapy session',
 		price: 30,
 		features: [
 			'60 minutes',
@@ -28,7 +29,7 @@ const DUMMY_PRODUCTS = [
 	},
 	{
 		id: '3',
-		title: 'Couples therapy session',
+		title: '💑 Couples therapy session',
 		price: 35,
 		features: [
 			'60 minutes',
@@ -39,7 +40,7 @@ const DUMMY_PRODUCTS = [
 	},
 	{
 		id: '4',
-		title: 'Family therapy session',
+		title: '👪 Family therapy session',
 		price: 35,
 		features: [
 			'60 minutes',
