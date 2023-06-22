@@ -1,7 +1,6 @@
 @use '../../styles/styles.scss' as *;
 
 .services {
-	font-family: $font-nunito;
 	margin: 3rem max(32px, ((100vw - $body-width)/2));
 	display: flex;
 	flex-direction: row;

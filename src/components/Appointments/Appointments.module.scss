@@ -1,6 +1,5 @@
 @use '../../styles/styles.scss' as *;
 .appointments {
-	font-family: $font-nunito;
 	padding: 64px max(32px, ((100vw - $body-width) / 2));
 	background-color: $color-black-05;
 	display: flex;

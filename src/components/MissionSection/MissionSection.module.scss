@@ -1,7 +1,6 @@
 @use '../../styles/styles.scss' as *;
 
 .mission {
-	font-family: $font-nunito;
 	padding: 64px max(32px, (100vw - $body-width)/2);
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -29,6 +28,7 @@
 	&__description {
 		margin: 0;
 		font-size: $h5;
+		// text-wrap: balance;
 	}
 
 	&__info-card {
@@ -36,6 +36,7 @@
 		display: flex;
 		justify-content: space-between;
 		gap: 32px;
+
 		&-icon {
 			width: 96px;
 			height: 96px;
@@ -45,6 +46,7 @@
 				fill: $color-primary;
 			}
 		}
+
 		&-text {
 			flex-grow: 1;
 			display: flex;

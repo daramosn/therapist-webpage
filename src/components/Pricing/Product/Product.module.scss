@@ -1,0 +1,13 @@
+@use '../../../styles/styles.scss' as *;
+
+.product {
+	border: 1px solid $color-black-10;
+	&__title {
+		text-align: center;
+	}
+
+	&__features {
+		list-style: none;
+		padding: 0;
+	}
+}

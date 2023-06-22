@@ -4,7 +4,6 @@
 	padding: 64px max(32px, ((100vw - $body-width)/2));
 	background: $color-black-05;
 	color: black;
-	font-family: $font-nunito;
 
 	&__title {
 		font-style: normal;
@@ -28,7 +27,8 @@
 
 	&__degree {
 		margin: 0;
-		font-size: $h4 + 8px;
+		font-size: $h4;
+		font-weight: 800;
 		&-description {
 			font-size: $paragraph;
 			color: $color-primary;
