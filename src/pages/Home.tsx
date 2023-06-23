@@ -6,6 +6,7 @@ import Features from '../components/Features/Features';
 import Appointments from '../components/Appointments/Appointments';
 import MissionSection from '../components/MissionSection/MissionSection';
 import Pricing from '../components/Pricing/Pricing';
+import Benefits from '../components/Benefits/Benefits';
 
 const Home = () => {
 	return (
@@ -17,6 +18,7 @@ const Home = () => {
 			<MissionSection />
 			<Appointments />
 			<Pricing />
+			<Benefits />
 		</>
 	);
 };

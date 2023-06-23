@@ -63,6 +63,7 @@
 		height: 100%;
 		max-height: 545px;
 		object-fit: cover;
+		// border-radius: 22% 78% 34% 66% / 65% 37% 63% 35%;
 
 		@include media(md) {
 			aspect-ratio: 3.5/2;
