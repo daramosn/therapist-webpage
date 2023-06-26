@@ -1,9 +1,7 @@
 import React from 'react';
 
-import { ReactComponent as HappyHeadIcon } from '../../assets/icons/happy.svg';
-import { ReactComponent as PlantIcon } from '../../assets/icons/planting.svg';
-
 import happyFamily from '../../assets/images/family.webp';
+import { ReactComponent as IconPhone } from '../../assets/icons/phone-solid.svg';
 
 import classes from './Benefits.module.scss';
 
@@ -24,7 +22,7 @@ const Benefits = () => {
 					Therapy is a transformative process that can bring about
 					numerous benefits and improve various aspects of your life.
 				</p>
-				<div className={classes['benefits__info-card']}>
+				<div>
 					<h3>Supportive Environment</h3>
 					<p>
 						Therapy provides a non-judgmental and confidential space
@@ -33,7 +31,7 @@ const Benefits = () => {
 						professional.
 					</p>
 				</div>
-				<div className={classes['benefits__info-card']}>
+				<div>
 					<h3>Personalized Approach</h3>
 					<p>
 						Therapy is tailored to the unique needs of each
@@ -42,6 +40,10 @@ const Benefits = () => {
 						and interventions to promote growth, healing, and
 						self-discovery.
 					</p>
+				</div>
+				<div className={classes['benefits__phone']}>
+					<IconPhone className={classes['benefits__phone-icon']} />
+					<span> (555) 555-5555</span>
 				</div>
 			</div>
 		</section>
