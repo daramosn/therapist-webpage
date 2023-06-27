@@ -1,5 +1,5 @@
-import officeImage from '../../assets/images/features_1.jpg';
-import avatarImage from '../../assets/images/therapist-photo.jpg';
+import officeImage from '../../assets/images/features_1.webp';
+import avatarImage from '../../assets/images/therapist-photo.webp';
 import Comment from './components/Comment/Comment';
 
 import { ReactComponent as HeartCheck } from '../../assets/icons/heart-circle-check-solid.svg';

@@ -7,6 +7,8 @@ import Appointments from '../components/Appointments/Appointments';
 import MissionSection from '../components/MissionSection/MissionSection';
 import Pricing from '../components/Pricing/Pricing';
 import Benefits from '../components/Benefits/Benefits';
+import Contact from '../components/Contact/Contact';
+import Footer from '../components/Footer/Footer';
 
 const Home = () => {
 	return (
@@ -19,6 +21,8 @@ const Home = () => {
 			<Appointments />
 			<Pricing />
 			<Benefits />
+			<Contact />
+			<Footer />
 		</>
 	);
 };

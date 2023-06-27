@@ -1,0 +1,70 @@
+@use '../../styles/styles.scss' as *;
+
+.contact {
+	background-color: $color-black-05;
+	padding: 64px max(32px, (100vw - $body-width)/ 2);
+	line-height: 32px;
+
+	&__title {
+		font-size: $h3;
+	}
+
+	&__grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 64px;
+
+		@include media(md) {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	&__info {
+		&-description {
+			font-size: $h5;
+		}
+		&-subtitle {
+			font-size: $h5;
+		}
+
+		&-list-item {
+			font-size: $h5;
+			margin-block: 16px;
+		}
+	}
+
+	&__form {
+		padding: clamp(32px, 6.4vw - 0.8rem, 64px);
+		border: none;
+		border-radius: 16px;
+		background-color: white;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		gap: 8px;
+
+		&-label {
+			font-size: $h5;
+		}
+		&-input {
+			min-height: 32px;
+			border-radius: 4px;
+			margin-bottom: 32px;
+			padding: 4px;
+			font-size: $paragraph;
+		}
+		&-text {
+			min-height: 160px;
+			font-size: $paragraph;
+			border-radius: 4px;
+			resize: vertical;
+			flex-grow: 1;
+			padding: 4px;
+		}
+
+		&-button {
+			margin-top: 32px;
+			font-size: $h5;
+		}
+	}
+}

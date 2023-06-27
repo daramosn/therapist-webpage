@@ -22,6 +22,7 @@ const Benefits = () => {
 					Therapy is a transformative process that can bring about
 					numerous benefits and improve various aspects of your life.
 				</p>
+
 				<div>
 					<h3>Supportive Environment</h3>
 					<p>

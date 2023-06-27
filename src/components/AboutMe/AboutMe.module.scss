@@ -6,7 +6,7 @@
 	color: black;
 
 	&__title {
-		font-style: normal;
+		margin-bottom: 32px;
 	}
 	&__information {
 		display: grid;
@@ -27,8 +27,7 @@
 
 	&__degree {
 		margin: 0;
-		font-size: $h4;
-		font-weight: 800;
+		font-size: $h3;
 		&-description {
 			font-size: $paragraph;
 			color: $color-primary;

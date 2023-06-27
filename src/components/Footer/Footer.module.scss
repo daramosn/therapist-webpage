@@ -1,0 +1,19 @@
+@use '../../styles/styles.scss' as *;
+.footer {
+	min-height: 160px;
+	background: $color-black;
+	color: white;
+	padding: 32px max(32px, (100vw - $body-width)/ 2);
+	text-align: center;
+
+	&__title {
+		font-size: 16px;
+		font-weight: 300;
+		margin-bottom: 8px;
+	}
+	&__text {
+		font-size: 14px;
+		font-weight: 300;
+		margin: 0;
+	}
+}

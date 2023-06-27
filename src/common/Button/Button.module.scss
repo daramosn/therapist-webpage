@@ -1,14 +1,14 @@
 @use '../../styles/styles.scss' as *;
 
 .button {
-	background-color: $color-primary-75;
+	background-color: $color-primary;
 	border: none;
 	border-radius: 12px;
 	padding: 8px 16px;
-	color: $color-black-05;
+	color: white;
 	transition: 0.2s all;
 
 	&:hover {
-		background-color: $color-primary;
+		background-color: $color-primary-75;
 	}
 }

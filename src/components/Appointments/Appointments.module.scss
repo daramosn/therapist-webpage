@@ -13,7 +13,6 @@
 
 	&__image {
 		flex-grow: 1;
-		// width: clamp(250px, 90vw, 300px);
 		width: 250px;
 	}
 
@@ -21,8 +20,7 @@
 		flex-grow: 1;
 		background-color: white;
 		margin: 0;
-		font-size: $h4;
-		font-weight: 700;
+		font-size: $h3;
 		display: flex;
 		justify-content: center;
 		align-items: center;

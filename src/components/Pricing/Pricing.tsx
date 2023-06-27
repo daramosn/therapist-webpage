@@ -54,13 +54,13 @@ const DUMMY_PRODUCTS = [
 const Pricing = () => {
 	return (
 		<div className={classes['pricing']}>
-			<h2 className={classes['pricing__title']}>Pricing plans</h2>
-			<h4 className={classes['pricing__description']}>
+			<h4 className={classes['pricing__title']}>Pricing plans</h4>
+			<p className={classes['pricing__description']}>
 				Investing in your mental health and well-being is a valuable
 				step towards personal growth. I offer flexible pricing options
 				to ensure accessibility and affordability for everyone. Please
 				see below for my current pricing structure:
-			</h4>
+			</p>
 
 			<ul className={classes['pricing__products']}>
 				{DUMMY_PRODUCTS.map((product) => (

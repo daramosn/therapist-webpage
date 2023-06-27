@@ -7,10 +7,10 @@ const MissionSection = () => {
 	return (
 		<section className={classes['mission']}>
 			<div className={classes['mission__info']}>
-				<h4 className={classes['mission__title']}>
+				<h5 className={classes['mission__title']}>
 					Psychology specialist
-				</h4>
-				<h2 className={classes['mission__name']}>Dr. John Doe</h2>
+				</h5>
+				<h3 className={classes['mission__name']}>Dr. John Doe</h3>
 				<p className={classes['mission__description']}>
 					Sample text sample text sample text sample text sample text
 					sample text sample text
