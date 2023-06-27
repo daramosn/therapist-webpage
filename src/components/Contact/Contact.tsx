@@ -25,13 +25,13 @@ const Contact = () => {
 							📞 (555) 555-5555
 						</li>
 						<li className={classes['contact__info-list-item']}>
-							📧 info@johndoe-psychologist.com{' '}
+							📧 info@johndoe-psychologist.com
 						</li>
 						<li className={classes['contact__info-list-item']}>
 							🕙 Monday - Friday: 8 AM - 4PM
 						</li>
 						<li className={classes['contact__info-list-item']}>
-							🗺️ 65 Street, Network City, NYPD{' '}
+							🗺️ 65 Street, Network City, NYPD
 						</li>
 					</ul>
 				</div>

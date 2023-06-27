@@ -1,10 +1,14 @@
 import React from 'react';
 
+import { ReactComponent as IconGithub } from '../../assets/icons/github-icon.svg';
 import classes from './Footer.module.scss';
 
 const Footer = () => {
 	return (
 		<div className={classes['footer']}>
+			<a href="https://github.com/daramosn/therapist-webpage">
+				<IconGithub className={classes['footer__icon']} />
+			</a>
 			<h5 className={classes['footer__title']}>
 				Psychology Specialist: John Doe
 			</h5>

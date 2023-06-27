@@ -16,4 +16,15 @@
 		font-weight: 300;
 		margin: 0;
 	}
+	&__icon {
+		margin-top: 24px;
+		width: 48px;
+		color: $color-black-10;
+		transition: all 0.1s ease-out;
+
+		&:hover {
+			transform: scale(1.05);
+			color: white;
+		}
+	}
 }

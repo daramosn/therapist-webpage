@@ -9,9 +9,9 @@ const router = createBrowserRouter([
 		element: <Header />,
 		children: [
 			{ index: true, element: <Home /> },
-			{ path: 'about', element: <h3>about</h3> },
-			{ path: 'contact', element: <h3> contact</h3> },
-			{ path: 'pricing', element: <h3>pricing</h3> },
+			{ path: 'blog', element: <h3>Blog</h3> },
+			// { path: 'contact', element: <h3> contact</h3> },
+			// { path: 'pricing', element: <h3>pricing</h3> },
 		],
 	},
 ]);

@@ -47,6 +47,7 @@
 			font-size: $h5;
 		}
 		&-input {
+			border: 1px solid $color-black-50;
 			min-height: 32px;
 			border-radius: 4px;
 			margin-bottom: 32px;
@@ -54,8 +55,10 @@
 			font-size: $paragraph;
 		}
 		&-text {
-			min-height: 160px;
+			font-family: $font-lato;
 			font-size: $paragraph;
+			border: 1px solid $color-black-50;
+			min-height: 160px;
 			border-radius: 4px;
 			resize: vertical;
 			flex-grow: 1;
