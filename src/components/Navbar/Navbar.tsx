@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 import Logo from './components/Logo';
 import { ReactComponent as LogoTwitter } from '../../assets/icons/twitter.svg';
@@ -9,7 +10,7 @@ import classes from './Navbar.module.scss';
 
 const Navbar = () => {
 	return (
-		<ul className={classes['navbar']}>
+		<motion.ul animate={{ y: [10, 0] }} className={classes['navbar']}>
 			<li className={classes['navbar__logo']}>
 				<Link to={'/'}>
 					<Logo />
@@ -33,7 +34,7 @@ const Navbar = () => {
 					<LogoInstagram />
 				</li>
 			</div>
-		</ul>
+		</motion.ul>
 	);
 };
 

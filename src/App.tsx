@@ -1,7 +1,7 @@
-import React from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Header from './pages/Header';
 import Home from './pages/Home';
+import Blog from './pages/Blog';
 
 const router = createBrowserRouter([
 	{
@@ -9,9 +9,7 @@ const router = createBrowserRouter([
 		element: <Header />,
 		children: [
 			{ index: true, element: <Home /> },
-			{ path: 'blog', element: <h3>Blog</h3> },
-			// { path: 'contact', element: <h3> contact</h3> },
-			// { path: 'pricing', element: <h3>pricing</h3> },
+			{ path: 'blog', element: <Blog /> },
 		],
 	},
 ]);

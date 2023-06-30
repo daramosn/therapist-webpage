@@ -15,8 +15,7 @@
 	color: $color-black-05;
 	display: grid;
 	place-content: end;
-	text-wrap: balance;
-	-webkit-text-wrap: balance;
+	// text-wrap: balance;
 
 	&__form {
 		margin-top: 32px;

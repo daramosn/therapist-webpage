@@ -31,3 +31,15 @@ $scale-in-tr: scale-in-tr 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 		opacity: 1;
 	}
 }
+
+$slide-in: slide-in 0.5s ease-in;
+@keyframes slide-in {
+	0% {
+		opacity: 0;
+		transform: translateX(-300px);
+	}
+	110% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}

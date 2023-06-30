@@ -1,3 +1,4 @@
+import { motion, Variants } from 'framer-motion';
 import { ReactComponent as emotionalIcon } from '../../assets/icons/emotional.svg';
 import { ReactComponent as handsIcon } from '../../assets/icons/heart-hands.svg';
 import { ReactComponent as heartIcon } from '../../assets/icons/heart.svg';
@@ -5,6 +6,11 @@ import { ReactComponent as heartIcon } from '../../assets/icons/heart.svg';
 import Service from './components/Service/Service';
 
 import classes from './Services.module.scss';
+
+// const container: Variants = {
+// 	hidden: { opacity: 0, y: '300px' },
+// 	show: { opacity: 1, y: 0, transition: { duration: 0.8 } },
+// };
 
 const Services = () => {
 	return (
@@ -16,6 +22,7 @@ const Services = () => {
 				}
 				icon={handsIcon}
 			/>
+
 			<Service
 				className={classes['services--background']}
 				title={'Couples therapy'}
@@ -24,6 +31,7 @@ const Services = () => {
 				}
 				icon={emotionalIcon}
 			/>
+
 			<Service
 				title={'Family Therapy'}
 				description={
