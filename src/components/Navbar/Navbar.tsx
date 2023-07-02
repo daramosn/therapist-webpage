@@ -9,17 +9,25 @@ import { ReactComponent as LogoInstagram } from '../../assets/icons/instagram.sv
 import classes from './Navbar.module.scss';
 
 const Navbar = () => {
+	const resetScrollHandler = () => {
+		window.scrollTo(0, 0);
+	};
+
 	return (
 		<motion.ul animate={{ y: [10, 0] }} className={classes['navbar']}>
 			<li className={classes['navbar__logo']}>
-				<Link to={'/'}>
+				<Link onClick={resetScrollHandler} to={'/'}>
 					<Logo />
 				</Link>
 			</li>
 
 			<div className={classes['navbar__links']}>
 				<li>
-					<Link className={classes['navbar__link']} to={'/blog'}>
+					<Link
+						onClick={resetScrollHandler}
+						className={classes['navbar__link']}
+						to={'/blog'}
+					>
 						Blog
 					</Link>
 				</li>
