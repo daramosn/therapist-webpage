@@ -4,6 +4,8 @@ import { motion } from 'framer-motion';
 import { DUMMY_POSTS } from '../../utils/db';
 
 import classes from './BlogDashboard.module.scss';
+import { useNavigate } from 'react-router-dom';
+import { stringToLinkRoute } from '../../utils/stringToLinkRoute';
 
 const slideIn = {
 	opacity: [0, 1],
@@ -30,11 +32,18 @@ const item = {
 };
 
 const BlogDashboard = () => {
+	const navigate = useNavigate();
+
+	const toRouteHandler = (title: string) => {
+		window.scrollTo(0, 0);
+		navigate(`/blog/post/${stringToLinkRoute(title)}`);
+	};
+
 	return (
 		<>
 			<main className={classes['blog']}>
 				<motion.h3 animate={slideIn} className={classes['blog__title']}>
-					My blog
+					Blog
 				</motion.h3>
 
 				<motion.div
@@ -48,6 +57,7 @@ const BlogDashboard = () => {
 							variants={item}
 							key={post.id}
 							className={classes['blog__post']}
+							onClick={toRouteHandler.bind(null, post.title)}
 						>
 							<img
 								className={classes['blog__post-image']}
@@ -57,6 +67,9 @@ const BlogDashboard = () => {
 							<h4 className={classes['blog__post-title']}>
 								{post.title}
 							</h4>
+							<p className={classes['blog__post-date']}>
+								{post.date}
+							</p>
 							<div className={classes['blog__post-tags']}>
 								{post.tags.map((tag) => (
 									<span

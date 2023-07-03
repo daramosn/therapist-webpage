@@ -4,6 +4,7 @@
 
 	&__title {
 		font-size: $h3;
+		margin: 0 0 48px 0;
 	}
 
 	&__container {
@@ -29,8 +30,18 @@
 			object-fit: cover;
 		}
 
-		&-title,
+		&-title {
+			margin: 24px 16px 8px 16px;
+		}
+
+		&-date {
+			margin: 8px 16px 16px 16px;
+			font-size: 14px;
+			color: $color-black-50;
+		}
+
 		&-tags {
+			margin: 0;
 			padding: 8px 16px;
 		}
 

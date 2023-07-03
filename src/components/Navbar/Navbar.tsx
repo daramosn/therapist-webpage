@@ -14,7 +14,11 @@ const Navbar = () => {
 	};
 
 	return (
-		<motion.ul animate={{ y: [10, 0] }} className={classes['navbar']}>
+		<motion.ul
+			animate={{ y: [10, 0, 4, 0] }}
+			transition={{ duration: 0.5 }}
+			className={classes['navbar']}
+		>
 			<li className={classes['navbar__logo']}>
 				<Link onClick={resetScrollHandler} to={'/'}>
 					<Logo />
